@@ -22,6 +22,10 @@ public class MyController {
 @Autowired
 StudentDao dao;
 
+@RequestMapping(path="/check")
+public String check(){
+	return "Hello There";
+}
 @RequestMapping(path="/students",produces= {"application/json"})
 public List<Student> allstudents(){
 	List<Student> students=dao.findAll();
