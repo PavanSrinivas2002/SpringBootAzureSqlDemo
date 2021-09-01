@@ -24,7 +24,7 @@ StudentDao dao;
 
 @RequestMapping(path="/check")
 public String check(){
-	return "Hello There";
+	return "Hello There this is my new commit";
 }
 @RequestMapping(path="/students",produces= {"application/json"})
 public List<Student> allstudents(){
